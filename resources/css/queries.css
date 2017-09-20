@@ -10,11 +10,13 @@
 }
 
 
-
 /* Small tablet to big tablet:from 768px to 1023px */
 @media only screen and (max-width:1023px){
     body { font-size: 18px;}
     section {padding: 60px 0;}
+    /* fixme - video height*/
+    .first-video { padding: 0;}
+
     .long-copy{
       /*width and margin-left(both margin-right)should be 100% together*/
       width: 80%;
@@ -43,10 +45,6 @@
     /* Adona fixme  btn-app  */
 
 }
-
-
-
-
 
 /* Small phones to small tablets: from 481 to 767px*/
 @media only screen and (max-width:767px){
@@ -88,11 +86,13 @@
 @media only screen and (max-width:480px){
     section{padding: 25px 0;}
     .contact-form{width: 100%;}
+  
+
     /* Adona fixme*/
     .overlay{
-      width: 20%;
+      width: 40%;
       text-align: center;
-      font-size: 4px;
+      font-size: 40px;
     }
 
 }
