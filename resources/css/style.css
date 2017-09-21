@@ -325,7 +325,18 @@ header {
   border-bottom: 2px solid #e67e22;
 }
 
+/* Mobile navi*/
+.mobile-nav-icon {
+  float: right;
+  margin-top: 30px;
+  cursor: pointer;
+  display: none;
+}
 
+.mobile-nav-icon i {
+  font-size: 200%;
+  color: #fff;
+}
 /* sticky- navi*/
 .sticky {
   position: fixed;
@@ -682,9 +693,10 @@ footer p{
     animation-duration: 1s;
 }
 /* js--wp-4 is not fadein or fadeout*/
-.js--wp-4 {
+.js--wp-4,
+.js--wp-5 {
     -webkit-animation-duration: 1s;
-    animation-duration: 1s;
+    animation-duration: 2s;
 }
 
 .js--wp-1.animated,

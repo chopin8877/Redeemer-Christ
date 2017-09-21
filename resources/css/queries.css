@@ -58,7 +58,33 @@
       width: 100%;
       margin: 0 0 4% 0;
     }
-    .main-nav{display: none;}/* nav disapper*/
+    .main-nav{display: none;}
+    .mobile-nav-icon {display: inline-block;}
+
+    .main-nav {
+      float: left;
+      margin-top: 35px;/* compare to style.css margin-top:50px*/
+      margin-left: 25px;
+    }
+
+    .main-nav li {
+      display: block;
+    }
+
+    .main-nav li a:link,
+    .main-nav li a:visited {
+      display: block;
+      border: 0;/* why? bcz no hover on mobile*/
+      padding: 10px 0;
+      font-size: 100%;
+    }
+
+    .sticky .main-nav {margin-top: 10px;}
+
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a: visited { padding: 10px 0;}
+    .sticky .mobile-nav-icon {margin-top: 10px;}
+    .sticky .mobile-nav-icon i { color: #555;}
     h1{font-size: 180%;} /* h1 h2 font too big*/
     h2{font-size: 150%;}
     .long-copy{
@@ -86,7 +112,7 @@
 @media only screen and (max-width:480px){
     section{padding: 25px 0;}
     .contact-form{width: 100%;}
-  
+
 
     /* Adona fixme*/
     .overlay{
