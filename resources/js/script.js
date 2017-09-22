@@ -88,4 +88,21 @@ $(document).ready(function() {
             icon.removeClass('ion-close-round');
         }
     });
+
+ /* water effect for the second video*/
+ $('header').ripples({
+   resolution: 512,
+   dropRadius: 20,
+   perturbance: 0.04,
+});
+
+setInterval(function() {
+   var $el = $('header');
+   var x = Math.random() * $el.outerWidth();
+   var y = Math.random() * $el.outerHeight();
+   var dropRadius = 20;
+   var strength = 0.04 + Math.random() * 0.04;
+   $el.ripples('drop', x, y, dropRadius, strength);
+}, 400);
+
 });
