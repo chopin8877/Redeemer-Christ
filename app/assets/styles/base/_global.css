@@ -1,0 +1,13 @@
+body {
+  color: #555;
+  font-family: 'Lato','Arial', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  text-transform: uppercase;
+}
