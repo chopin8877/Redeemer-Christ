@@ -467,7 +467,6 @@ h1 {
 .large-hero{
   position: relative;
 
-
 }
 
 .large-hero__text-content{
@@ -481,27 +480,42 @@ h1 {
   }
 
 .large-hero__title {
-    font-weight: 300;
+    font-weight: 310;
     color:  #fff;
     font-size: 4.8rem;
-    margin: 0;
+    margin-top: 20;
   }
 
 .large-hero__subtitle {
     font-weight: 300;
     color: #fff;
     font-size: 2.9rem;
-    margin-top: 20px;
-
+    word-spacing: .15rem;
+    margin-top: 10px;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+    margin-left: auto; /*text align is center*/
+    margin-right: auto; /*text align is center*/
     text-transform: uppercase;
   }
 
-.large-hero__description {
-    color:#fff;
-    font-size: 2.5rem;
-    font-weight: 100;
-    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+.btn {
+  background-color: #e67e22;
+  color: #fff;
+  text-decoration: none;
+  padding: .75rem 1.2rem;
+  display: inline-block;
+}
+
+.btn--blue {
+    background-color: #2f5572;
   }
+
+.btn--large {
+    font-size: 1.25rem;
+    padding: 1.1rem 1.9rem;
+  }
+
+/* background-color: #e67e22; previous version*/
 
 center {
   position: relative;
@@ -513,7 +527,7 @@ center {
 .overlay {
         width: 50%;
         text-align: center;
-        font-size: 90px;
+        font-size: 5.7rem;
         font-weight: 500;
         font-family: 'Rock+Salt';
         /* font-family: 'Berkshire Swash', cursive; */
