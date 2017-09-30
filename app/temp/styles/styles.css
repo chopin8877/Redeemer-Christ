@@ -472,8 +472,8 @@ h1 {
 .large-hero__text-content{
     position: absolute;
     top: 50%;
-    -webkit-transform:translateY(-200%);
-            transform:translateY(-200%);
+    -webkit-transform:translateY(-50%);
+            transform:translateY(-50%);
     left: 0;
     width: 100%;
     text-align: center;
@@ -511,6 +511,14 @@ h1 {
   }
   }
 
+@media(min-width: 530px) {
+
+.large-hero__title {
+        font-size: 4.8rem
+
+  }
+    }
+
 .large-hero__subtitle {
     font-weight: 300;
     color: #fff;
@@ -538,6 +546,7 @@ h1 {
   text-decoration: none;
   padding: .75rem 1.2rem;
   display: inline-block;
+  
 }
 
 .btn--blue {
@@ -556,17 +565,20 @@ h1 {
 
 /* background-color: #e67e22; previous version*/
 
-center {
+.center {
   position: relative;
-  margin: 0;
+  margin:0;
 }
 
-.background-video {width: 100%;}
+.background-video {
+  width: 100%;
+}
 
 .overlay {
         width: 50%;
         text-align: center;
         font-size: 5.7rem;
+
         font-weight: 500;
         font-family: 'Rock+Salt';
         /* font-family: 'Berkshire Swash', cursive; */

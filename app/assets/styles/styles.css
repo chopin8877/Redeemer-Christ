@@ -8,9 +8,14 @@
 
 
 /* background-color: #e67e22; previous version*/
+.center {
+  position: relative;
+  margin:0;
+}
 
-
-
+.background-video {
+  width: 100%;
+}
 
 .overlay {
         width: 50%;
