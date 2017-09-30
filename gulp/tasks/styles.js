@@ -3,8 +3,8 @@ postcss = require('gulp-postcss'),
 autoprefixer = require('autoprefixer'),
 cssvars = require('postcss-simple-vars'),
 nested = require('postcss-nested'),
-cssImport = require('postcss-import'),
-mixins = require('postcss-mixins');
+cssImport = require('postcss-import');
+
 
 
 
