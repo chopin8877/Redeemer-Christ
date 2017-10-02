@@ -20,7 +20,7 @@
 .overlay {
         width: 50%;
         text-align: center;
-        font-size: 9.7rem;
+        font-size: 1.1rem;
 
         font-weight: 500;
         font-family: 'Rock+Salt';
@@ -34,7 +34,7 @@
         padding: .2em;
         /*use below to control location of text*/
         position: absolute;
-        top: 80%;
+        top: 50%;
         left: 25%;
 
         /*the z-index makes the text stack above the video layer*/
