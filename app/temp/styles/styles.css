@@ -469,6 +469,10 @@ h1 {
 
 }
 
+.large-hero__image {
+    display: block;
+  }
+
 .large-hero__text-content{
     position: absolute;
     top: 50%;
@@ -482,7 +486,7 @@ h1 {
 .large-hero__title {
     font-weight: 310;
     color:  #fff;
-    margin-top: 20px;
+    margin-top: 0;
     font-size: 1.4rem;
 
   }
@@ -559,13 +563,122 @@ h1 {
   }
 
 .wrapper {
+
+  overflow: hidden;
   padding-left: 18px;
   padding-right: 18px;
+  max-width: 1236px;
+  margin-left: auto;
+  margin-right: auto;
+
 }
+
+.wrapper--medium {
+    max-width: 976px;
+  }
+
+.wrapper .wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+.wrapper--b-margin {
+    margin-bottom: 1rem;
+  }
+
+@media (min-width: 530px){
+
+.wrapper--b-margin {
+      margin-bottom: 3.875rem
+  }
+  }
+
+center{
+  position: relative;
+  margin:0;
+}
+
+.first {
+  position: absolute;
+
+}
+
+.first__background-video {
+    width: 100%;
+  }
+
+.first__overlay {
+    width: 50%;
+    text-align: center;
+    font-weight: 300;
+    font-family: 'Rock+Salt';  /* font-family: 'Berkshire Swash', cursive; */
+
+    /* black color of inside of the box
+    background-color: rgba(0,0,0,.3);
+    */
+    color:  #fff;
+    padding: .2em;
+    /*use below to control location of text*/
+    top: 10%;
+    left: 22.5%;
+    /*the z-index makes the text stack above the video layer*/
+    z-index: 1;
+
+    font-size: 2.2rem;
+  }
+
+@media (min-width: 530px){
+
+.first__overlay {
+        font-size: 4.8rem;
+        top: 30%;
+        left:20%
+  }
+  }
+
+@media (min-width: 800px){
+
+.first__overlay {
+        font-size: 5.8rem;
+        top: 25%;
+        left:25%
+  }
+  }
+
+.first__overlay a:link,
+  .first__overlay a:visited{
+    text-decoration: none;
+    color: #fff;
+    border: 0;
+  }
+
+.first__overlay a:hover,
+  .first__overlay a:active{
+    font-size: 120%;
+    font-weight: 700;
+    opacity: 0.9;
+  }
+
+.first__click {
+
+      display: block;
+      height: 100px;
+      top: 80%;
+      left:80%;
+
+
+    }
+
+.first__logo {
+
+      height: 50px;
+      width: auto;
+
+    }
 
 /* background-color: #e67e22; previous version*/
 
-.center {
+center {
   position: relative;
   margin:0;
 }
@@ -611,4 +724,12 @@ h1 {
       font-size: 120%;
       font-weight: 700;
       opacity: 0.9;
+    }
+
+.logo {
+      height: 100px;
+      width: auto;
+      float: left;
+      margin-top: 20px;
+
     }

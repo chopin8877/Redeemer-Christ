@@ -5,10 +5,11 @@
 @import "modules/_large-hero";
 @import "modules/_btn";
 @import "modules/_wrapper";
+@import "modules/_first";
 
 
 /* background-color: #e67e22; previous version*/
-.center {
+center {
   position: relative;
   margin:0;
 }
@@ -53,4 +54,11 @@
       font-size: 120%;
       font-weight: 700;
       opacity: 0.9;
+    }
+    .logo {
+      height: 100px;
+      width: auto;
+      float: left;
+      margin-top: 20px;
+
     }

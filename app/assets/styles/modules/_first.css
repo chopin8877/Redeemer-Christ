@@ -1,0 +1,76 @@
+center{
+  position: relative;
+  margin:0;
+}
+
+.first {
+  position: absolute;
+
+  &__background-video {
+    width: 100%;
+  }
+
+  &__overlay {
+    width: 50%;
+    text-align: center;
+    font-weight: 300;
+    font-family: 'Rock+Salt';  /* font-family: 'Berkshire Swash', cursive; */
+
+    /* black color of inside of the box
+    background-color: rgba(0,0,0,.3);
+    */
+    color:  #fff;
+    padding: .2em;
+    /*use below to control location of text*/
+    top: 10%;
+    left: 22.5%;
+    /*the z-index makes the text stack above the video layer*/
+    z-index: 1;
+
+    font-size: 2.2rem;
+
+      @mixin atSmall {
+        font-size: 4.8rem;
+        top: 30%;
+        left:20%;
+      }
+
+      @mixin atMedium {
+        font-size: 5.8rem;
+        top: 25%;
+        left:25%;
+      }
+  }
+
+  &__overlay a:link,
+  &__overlay a:visited{
+    text-decoration: none;
+    color: #fff;
+    border: 0;
+  }
+
+  &__overlay a:hover,
+  &__overlay a:active{
+    font-size: 120%;
+    font-weight: 700;
+    opacity: 0.9;
+  }
+
+    &__click {
+
+      display: block;
+      height: 100px;
+      top: 80%;
+      left:80%;
+
+
+    }
+
+    &__logo {
+
+      height: 50px;
+      width: auto;
+
+    }
+
+}

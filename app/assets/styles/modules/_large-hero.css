@@ -1,6 +1,10 @@
 .large-hero{
   position: relative;
 
+  &__image {
+    display: block;
+  }
+
   &__text-content{
     position: absolute;
     top: 50%;
@@ -14,7 +18,7 @@
   &__title {
     font-weight: 310;
     color:  #fff;
-    margin-top: 20px;
+    margin-top: 0;
     font-size: 1.4rem;
 
    @mixin atSmall {
