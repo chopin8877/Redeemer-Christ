@@ -455,6 +455,11 @@ body {
   font-family: 'Lato','Arial', sans-serif;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -593,13 +598,10 @@ h1 {
   }
   }
 
-center{
-  position: relative;
-  margin:0;
-}
-
 .first {
-  position: absolute;
+
+    position: relative;
+    margin:0;
 
 }
 
@@ -608,6 +610,7 @@ center{
   }
 
 .first__overlay {
+    position: absolute;
     width: 50%;
     text-align: center;
     font-weight: 300;
@@ -630,9 +633,8 @@ center{
 @media (min-width: 530px){
 
 .first__overlay {
-        font-size: 4.8rem;
-        top: 30%;
-        left:20%
+        font-size: 3.8rem;
+        left:25%
   }
   }
 
@@ -640,7 +642,7 @@ center{
 
 .first__overlay {
         font-size: 5.8rem;
-        top: 25%;
+        
         left:25%
   }
   }
@@ -660,21 +662,82 @@ center{
   }
 
 .first__click {
-
-      display: block;
-      height: 100px;
-      top: 80%;
-      left:80%;
-
-
+      position: absolute;
+      top: 60%;
+      right: 0;
+      -webkit-transform: translateX(20%);
+              transform: translateX(20%);
     }
+
+@media (min-width: 530px){
+
+.first__click {
+                top: 70%;
+                right: 5%;
+                -webkit-transform: translateX(30%);
+                        transform: translateX(30%)
+    }
+  }
+
+@media (min-width: 800px){
+
+.first__click {
+                top: 80%;
+                right: 5%;
+                -webkit-transform: translateX(30%);
+                        transform: translateX(30%)
+    }
+  }
+
+@media (min-width: 1200px){
+
+.first__click {
+                top: 80%;
+                right: 5%;
+                -webkit-transform: translateX(30%);
+                        transform: translateX(30%)
+    }
+  }
 
 .first__logo {
-
+      display: inline-block;
       height: 50px;
       width: auto;
-
     }
+
+@media (min-width: 530px){
+
+.first__logo {
+        height: 70px;
+        top: 30%;
+        left:20%
+    }
+  }
+
+.first__figure {
+      position: relative;
+    }
+
+.first__figcaption {
+      position: absolute;
+      width: 100%;
+      font-size: .9rem;
+      line-height: 10px;
+      text-align: center;
+      left: 0;
+      top:30%;
+      color: #fff;
+      font-weight: 300;
+    }
+
+@media (min-width: 530px){
+
+.first__figcaption {
+        font-size: 1.1rem;
+        line-height: 20px;
+        font-weight: 400
+    }
+  }
 
 /* background-color: #e67e22; previous version*/
 

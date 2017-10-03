@@ -1,16 +1,16 @@
-center{
-  position: relative;
-  margin:0;
-}
 
 .first {
-  position: absolute;
+
+    position: relative;
+    margin:0;
+
 
   &__background-video {
     width: 100%;
   }
 
   &__overlay {
+    position: absolute;
     width: 50%;
     text-align: center;
     font-weight: 300;
@@ -30,14 +30,13 @@ center{
     font-size: 2.2rem;
 
       @mixin atSmall {
-        font-size: 4.8rem;
-        top: 30%;
-        left:20%;
+        font-size: 3.8rem;
+        left:25%;
       }
 
       @mixin atMedium {
         font-size: 5.8rem;
-        top: 25%;
+        
         left:25%;
       }
   }
@@ -57,20 +56,65 @@ center{
   }
 
     &__click {
+      position: absolute;
+      top: 60%;
+      right: 0;
+      -webkit-transform: translateX(20%);
+              transform: translateX(20%);
 
-      display: block;
-      height: 100px;
-      top: 80%;
-      left:80%;
-
-
+              @mixin atSmall {
+                top: 70%;
+                right: 5%;
+                -webkit-transform: translateX(30%);
+                        transform: translateX(30%);
+              }
+              @mixin atMedium {
+                top: 80%;
+                right: 5%;
+                -webkit-transform: translateX(30%);
+                        transform: translateX(30%);
+              }
+              @mixin atLarge {
+                top: 80%;
+                right: 5%;
+                -webkit-transform: translateX(30%);
+                        transform: translateX(30%);
+              }
     }
 
     &__logo {
-
+      display: inline-block;
       height: 50px;
       width: auto;
 
+      @mixin atSmall {
+        height: 70px;
+        top: 30%;
+        left:20%;
+      }
+    }
+
+    &__figure {
+      position: relative;
+    }
+
+    &__figcaption {
+      position: absolute;
+      width: 100%;
+      font-size: .9rem;
+      line-height: 10px;
+      text-align: center;
+      left: 0;
+      top:30%;
+      color: #fff;
+      font-weight: 300;
+
+      @mixin atSmall {
+        font-size: 1.1rem;
+        line-height: 20px;
+        font-weight: 400;
+
+      }
     }
 
 }
