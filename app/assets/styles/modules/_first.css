@@ -7,6 +7,7 @@
 
   &__background-video {
     width: 100%;
+    
   }
 
   &__overlay {
@@ -36,7 +37,7 @@
 
       @mixin atMedium {
         font-size: 5.8rem;
-        
+
         left:25%;
       }
   }
@@ -55,34 +56,34 @@
     opacity: 0.9;
   }
 
-    &__click {
+    &--click {
       position: absolute;
-      top: 60%;
-      right: 0;
+      bottom: 10%;
+      right: 10%;
       -webkit-transform: translateX(20%);
               transform: translateX(20%);
 
               @mixin atSmall {
-                top: 70%;
+                bottom: 15%;
                 right: 5%;
                 -webkit-transform: translateX(30%);
                         transform: translateX(30%);
               }
               @mixin atMedium {
-                top: 80%;
+                bottom: 15%;
                 right: 5%;
                 -webkit-transform: translateX(30%);
                         transform: translateX(30%);
               }
               @mixin atLarge {
-                top: 80%;
+                bottom: 20%;
                 right: 5%;
                 -webkit-transform: translateX(30%);
                         transform: translateX(30%);
               }
     }
 
-    &__logo {
+    &--logo {
       display: inline-block;
       height: 50px;
       width: auto;
@@ -94,27 +95,48 @@
       }
     }
 
-    &__figure {
+    &--figure {
       position: relative;
     }
 
-    &__figcaption {
+    &--figcaption {
       position: absolute;
       width: 100%;
-      font-size: .9rem;
-      line-height: 10px;
       text-align: center;
       left: 0;
-      top:30%;
       color: #fff;
-      font-weight: 300;
 
-      @mixin atSmall {
-        font-size: 1.1rem;
-        line-height: 20px;
-        font-weight: 400;
-
-      }
     }
 
+    &--figcaption-red {
+      font-size: .7rem;
+      line-height: 9px;
+      font-weight: 300;
+      top:20%;
+
+      @mixin atSmall {
+        font-size: .9rem;
+        line-height: 12px;
+        font-weight: 400;
+        top: 30%;
+      }
+
+    }
+
+    &--figcaption-blue {
+      font-size: .7rem;
+      line-height: 9px;
+      font-weight: 300;
+      top: 20%;
+
+      @mixin atSmall {
+        font-size: .9rem;
+        line-height: 12px;
+        font-weight: 400;
+        top: 30%;
+      }
+
+
+
+}
 }

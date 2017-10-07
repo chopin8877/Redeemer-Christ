@@ -5,14 +5,24 @@
     display: block;
   }
 
+  &__first {
+    position: relative;
+  }
+
   &__text-content{
     position: absolute;
-    top: 50%;
+    top: 30%;
     -webkit-transform:translateY(-20%);
             transform:translateY(-20%);
     left: 0;
     width: 100%;
     text-align: center;
+
+    @mixin atMedium {
+      top: 40%;
+    }
+
+
   }
 
   &__title {
