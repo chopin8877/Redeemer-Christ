@@ -6,6 +6,7 @@
 @import "modules/_btn";
 @import "modules/_wrapper";
 @import "modules/_first";
+@import "modules/_click";
 
 
 /* background-color: #e67e22; previous version*/
@@ -25,12 +26,10 @@ center {
 
         font-weight: 500;
         font-family: 'Rock+Salt';
-        /* font-family: 'Berkshire Swash', cursive; */
+
         word-spacing: 8px;
         letter-spacing: 10px;
-        /* black color of inside of the box
-        background-color: rgba(0,0,0,.3);
-        */
+
         color: white;
         padding: .2em;
         /*use below to control location of text*/

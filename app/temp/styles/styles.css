@@ -467,40 +467,49 @@ img {
 
 h1 {
   text-transform: uppercase;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+}
+
+h2 {
+  text-transform: uppercase;
+  word-spacing:2px;
+  text-align:center;
+  letter-spacing: 1px;
+}
+
+li {
+  text-transform: uppercase;
 }
 
 .large-hero{
   position: relative;
-
+  background-size: cover;
 }
 
 .large-hero__image {
-    display: block;
-  }
+      display: block
+    }
 
 .large-hero__first {
-    position: relative;
-  }
+      position: relative;
+    }
 
 .large-hero__text-content{
-    position: absolute;
-    top: 30%;
-    -webkit-transform:translateY(-20%);
-            transform:translateY(-20%);
-    left: 0;
-    width: 100%;
-    text-align: center;
-
-
-  }
+      position: absolute;
+      top: 30%;
+      -webkit-transform:translateY(-20%);
+              transform:translateY(-20%);
+      left: 0;
+      width: 100%;
+      text-align: center;
+    }
 
 @media (min-width: 800px){
 
 .large-hero__text-content{
-      top: 40%
-
-
-  }
+        top: 40%
+    }
   }
 
 .large-hero__title {
@@ -508,40 +517,28 @@ h1 {
     color:  #fff;
     margin-top: 0;
     font-size: 1.4rem;
-
-  }
+}
 
 @media (min-width: 530px){
 
 .large-hero__title {
-     font-size: 7.8rem
-
-  }
+     font-size: 2.8rem
+}
   }
 
 @media (min-width: 800px){
 
 .large-hero__title {
-     font-size: 2.2rem
-
-  }
+     font-size: 3.2rem
+}
   }
 
 @media (min-width: 1200px){
 
 .large-hero__title {
      font-size: 4.8rem
-
+}
   }
-  }
-
-@media(min-width: 530px) {
-
-.large-hero__title {
-        font-size: 4.8rem
-
-  }
-    }
 
 .large-hero__subtitle {
     font-weight: 300;
@@ -553,14 +550,26 @@ h1 {
     margin-left: auto; /*text align is center*/
     margin-right: auto; /*text align is center*/
     text-transform: uppercase;
-
   }
 
 @media (min-width: 530px){
 
 .large-hero__subtitle {
-      font-size: 2.9rem
+      font-size: 1.9rem
+  }
+  }
 
+@media (min-width: 800px){
+
+.large-hero__subtitle {
+      font-size: 2.3rem
+  }
+  }
+
+@media (min-width: 1200px){
+
+.large-hero__subtitle {
+      font-size: 3.3rem
   }
   }
 
@@ -620,130 +629,164 @@ h1 {
 }
 
 .first__background-video {
-    width: 100%;
-    
-  }
+        width: 100%;
+
+      }
 
 .first__overlay {
-    position: absolute;
-    width: 50%;
-    text-align: center;
-    font-weight: 300;
-    font-family: 'Rock+Salt';  /* font-family: 'Berkshire Swash', cursive; */
+        position: absolute;
+        width: 50%;
+        text-align: center;
+        font-weight: 300;
+        font-family: 'Rock+Salt';  /* font-family: 'Berkshire Swash', cursive; */
 
-    /* black color of inside of the box
-    background-color: rgba(0,0,0,.3);
-    */
-    color:  #fff;
-    padding: .2em;
-    /*use below to control location of text*/
-    top: 10%;
-    left: 22.5%;
-    /*the z-index makes the text stack above the video layer*/
-    z-index: 1;
+        /* black color of inside of the box
+        background-color: rgba(0,0,0,.3);
+        */
+        color:  #fff;
+        padding: .2em;
+        /*use below to control location of text*/
+        top: 10%;
+        left: 25%;
 
-    font-size: 2.2rem;
-  }
+        /*the z-index makes the text stack above the video layer*/
+        z-index: 1;
+
+        font-size: 2.2rem;
+        }
 
 @media (min-width: 530px){
 
 .first__overlay {
-        font-size: 3.8rem;
-        left:25%
-  }
+            font-size: 3.8rem;
+            top:0;
+            left:25%
+        }
   }
 
 @media (min-width: 800px){
 
 .first__overlay {
-        font-size: 5.8rem;
-
-        left:25%
-  }
+            font-size: 5.8rem;
+            top: 5%;
+            left:25%
+        }
   }
 
 .first__overlay a:link,
-  .first__overlay a:visited{
-    text-decoration: none;
-    color: #fff;
-    border: 0;
-  }
+      .first__overlay a:visited{
+        text-decoration: none;
+        color: #fff;
+        border: 0;
+      }
 
 .first__overlay a:hover,
-  .first__overlay a:active{
-    font-size: 120%;
-    font-weight: 700;
-    opacity: 0.9;
-  }
+      .first__overlay a:active{
+        font-size: 120%;
+        font-weight: 700;
+        opacity: 0.9;
+      }
 
 .first--click {
+        position: absolute;
+      }
+
+.first--click-red{
+        bottom: 0;
+        right: -5%;
+      }
+
+@media (min-width: 530px){
+
+.first--click-red{
+          bottom: 0;
+          right: 10%
+      }
+  }
+
+@media (min-width: 800px){
+
+.first--click-red{
+          bottom: 0;
+          right: 10%
+      }
+  }
+
+@media (min-width: 1200px){
+
+.first--click-red{
+          bottom: 0;
+          right: 10%
+      }
+  }
+
+.first--logo {
+        display: inline-block;
+        height: 40px;
+        width: auto;
+      }
+
+@media (min-width: 530px){
+
+.first--logo {
+          height: 70px
+      }
+  }
+
+.first--figure {
+        position: relative;
+        }
+
+.first--figcaption {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        left: 0;
+        color: #fff;
+        }
+
+.first--blue {
       position: absolute;
-      bottom: 10%;
-      right: 10%;
-      -webkit-transform: translateX(20%);
-              transform: translateX(20%);
+      bottom: -50%;
+      left:-10%;
+      -webkit-transform: translateX(-30%);
+              transform: translateX(-30%);
+      -webkit-transform: translateY(-10%);
+              transform: translateY(-10%);
+
     }
 
 @media (min-width: 530px){
 
-.first--click {
-                bottom: 15%;
-                right: 5%;
-                -webkit-transform: translateX(30%);
-                        transform: translateX(30%)
+.first--blue {
+        bottom: -20%;
+        left:-10%;
+        -webkit-transform: translateY(-100%);
+                transform: translateY(-100%)
+
     }
   }
 
 @media (min-width: 800px){
 
-.first--click {
-                bottom: 15%;
-                right: 5%;
-                -webkit-transform: translateX(30%);
-                        transform: translateX(30%)
+.first--blue {
+        bottom: -200%;
+        left: -2%
+
     }
   }
 
 @media (min-width: 1200px){
 
-.first--click {
-                bottom: 20%;
-                right: 5%;
-                -webkit-transform: translateX(30%);
-                        transform: translateX(30%)
+.first--blue {
+        bottom: -90%;
+        left: -190%
+
     }
   }
-
-.first--logo {
-      display: inline-block;
-      height: 50px;
-      width: auto;
-    }
-
-@media (min-width: 530px){
-
-.first--logo {
-        height: 70px;
-        top: 30%;
-        left:20%
-    }
-  }
-
-.first--figure {
-      position: relative;
-    }
-
-.first--figcaption {
-      position: absolute;
-      width: 100%;
-      text-align: center;
-      left: 0;
-      color: #fff;
-
-    }
 
 .first--figcaption-red {
-      font-size: .7rem;
+      font-size: .6rem;
       line-height: 9px;
       font-weight: 300;
       top:20%;
@@ -765,11 +808,8 @@ h1 {
       font-size: .7rem;
       line-height: 9px;
       font-weight: 300;
-      top: 20%;
-
-
-
-}
+      top: 30%;
+    }
 
 @media (min-width: 530px){
 
@@ -777,11 +817,66 @@ h1 {
         font-size: .9rem;
         line-height: 12px;
         font-weight: 400;
-        top: 30%
+        top: 40%
+    }
+  }
 
-
-
+.click {
+  position: absolute;
 }
+
+.click--logo {
+      display: inline-block;
+      height: 40px;
+      width: auto;
+    }
+
+@media (min-width: 530px){
+
+.click--logo {
+        height: 70px
+    }
+  }
+
+.click--figure {
+      position: relative;
+      }
+
+.click--figcaption {
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      left: 0;
+      color: #fff;
+      }
+
+.click--red {
+    bottom: 0;
+    right: -5%;
+  }
+
+@media (min-width: 530px){
+
+.click--red {
+      bottom: 0;
+      right: 10%
+  }
+  }
+
+@media (min-width: 800px){
+
+.click--red {
+      bottom: 0;
+      right: 10%
+  }
+  }
+
+@media (min-width: 1200px){
+
+.click--red {
+      bottom: 0;
+      right: 10%
+  }
   }
 
 /* background-color: #e67e22; previous version*/
@@ -802,12 +897,10 @@ center {
 
         font-weight: 500;
         font-family: 'Rock+Salt';
-        /* font-family: 'Berkshire Swash', cursive; */
+
         word-spacing: 8px;
         letter-spacing: 10px;
-        /* black color of inside of the box
-        background-color: rgba(0,0,0,.3);
-        */
+
         color: white;
         padding: .2em;
         /*use below to control location of text*/
