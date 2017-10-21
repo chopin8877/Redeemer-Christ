@@ -688,12 +688,18 @@ li {
       }
 
 .first--click {
-        position: absolute;
+        padding: 2%;
+        list-style: none;
+        bottom: 0;
+        width: 50%;
       }
 
 .first--click-red{
-        bottom: 0;
-        right: -5%;
+        position: absolute;
+        display: inline-block;
+
+        right: 0;
+        text-align: right;
       }
 
 @media (min-width: 530px){
@@ -708,7 +714,7 @@ li {
 
 .first--click-red{
           bottom: 0;
-          right: 10%
+          right: 0
       }
   }
 
@@ -716,11 +722,12 @@ li {
 
 .first--click-red{
           bottom: 0;
-          right: 10%
+          right: 0
       }
   }
 
 .first--logo {
+
         display: inline-block;
         height: 40px;
         width: auto;
@@ -735,6 +742,10 @@ li {
 
 .first--figure {
         position: relative;
+        display: inline-block;
+
+        margin: 0 auto;
+
         }
 
 .first--figcaption {
@@ -745,52 +756,43 @@ li {
         color: #fff;
         }
 
-.first--blue {
-      position: absolute;
-      bottom: -50%;
-      left:-10%;
-      -webkit-transform: translateX(-30%);
-              transform: translateX(-30%);
-      -webkit-transform: translateY(-10%);
-              transform: translateY(-10%);
-
+.first--click-blue {
+        position: absolute;
+        display: inline-block;
+        text-align: left;
+        left:0;
     }
 
 @media (min-width: 530px){
 
-.first--blue {
-        bottom: -20%;
-        left:-10%;
-        -webkit-transform: translateY(-100%);
-                transform: translateY(-100%)
-
+.first--click-blue {
+          bottom: 0;
+          left:-10%
     }
   }
 
 @media (min-width: 800px){
 
-.first--blue {
-        bottom: -200%;
-        left: -2%
-
+.first--click-blue {
+          bottom: 0;
+          left: 0
     }
   }
 
 @media (min-width: 1200px){
 
-.first--blue {
-        bottom: -90%;
-        left: -190%
-
+.first--click-blue {
+          bottom: 0;
+          left: 0
     }
   }
 
 .first--figcaption-red {
+
       font-size: .6rem;
       line-height: 9px;
       font-weight: 300;
       top:20%;
-
     }
 
 @media (min-width: 530px){
@@ -800,11 +802,11 @@ li {
         line-height: 12px;
         font-weight: 400;
         top: 30%
-
     }
   }
 
 .first--figcaption-blue {
+
       font-size: .7rem;
       line-height: 9px;
       font-weight: 300;
@@ -819,64 +821,6 @@ li {
         font-weight: 400;
         top: 40%
     }
-  }
-
-.click {
-  position: absolute;
-}
-
-.click--logo {
-      display: inline-block;
-      height: 40px;
-      width: auto;
-    }
-
-@media (min-width: 530px){
-
-.click--logo {
-        height: 70px
-    }
-  }
-
-.click--figure {
-      position: relative;
-      }
-
-.click--figcaption {
-      position: absolute;
-      width: 100%;
-      text-align: center;
-      left: 0;
-      color: #fff;
-      }
-
-.click--red {
-    bottom: 0;
-    right: -5%;
-  }
-
-@media (min-width: 530px){
-
-.click--red {
-      bottom: 0;
-      right: 10%
-  }
-  }
-
-@media (min-width: 800px){
-
-.click--red {
-      bottom: 0;
-      right: 10%
-  }
-  }
-
-@media (min-width: 1200px){
-
-.click--red {
-      bottom: 0;
-      right: 10%
-  }
   }
 
 /* background-color: #e67e22; previous version*/

@@ -57,19 +57,18 @@
         opacity: 0.9;
       }
       &--click {
-        position: absolute;
+        padding: 2%;
         list-style: none;
-        width: 100%;
-      }
-      &--hearts{
-
+        bottom: 0;
         width: 50%;
       }
-      &--red{
+
+      &--click-red{
+        position: absolute;
         display: inline-block;
-        float: right;
-        bottom: 0;
-        right: -5%;
+
+        right: 0;
+        text-align: right;
 
         @mixin atSmall {
           bottom: 0;
@@ -77,11 +76,11 @@
         }
         @mixin atMedium {
           bottom: 0;
-          right: 10%;
+          right: 0;
         }
         @mixin atLarge {
           bottom: 0;
-          right: 10%;
+          right: 0;
         }
       }
       &--logo {
@@ -93,8 +92,13 @@
           height: 70px;
         }
       }
+
       &--figure {
         position: relative;
+        display: inline-block;
+
+        margin: 0 auto;
+
         }
       &--figcaption {
         position: absolute;
@@ -103,30 +107,30 @@
         left: 0;
         color: #fff;
         }
-      &--blue {
+      &--click-blue {
+        position: absolute;
         display: inline-block;
-        float: left;
-        bottom: 0;
+        text-align: left;
         left:0;
-        
+
         @mixin atSmall {
           bottom: 0;
           left:-10%;
-          -webkit-transform: translateY(-100%);
-                  transform: translateY(-100%);
+
 
         }
         @mixin atMedium {
           bottom: 0;
-          left: -2%;
+          left: 0;
         }
         @mixin atLarge {
           bottom: 0;
-          left: -190%;
+          left: 0;
         }
     }
 
     &--figcaption-red {
+
       font-size: .6rem;
       line-height: 9px;
       font-weight: 300;
@@ -140,6 +144,7 @@
     }
 
     &--figcaption-blue {
+
       font-size: .7rem;
       line-height: 9px;
       font-weight: 300;
