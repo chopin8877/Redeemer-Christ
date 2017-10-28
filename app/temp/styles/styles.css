@@ -652,14 +652,13 @@ li {
         /*the z-index makes the text stack above the video layer*/
         z-index: 1;
 
-        font-size: 2.2rem;
+        font-size: 1.6rem;
         }
 
 @media (min-width: 530px){
 
 .first__overlay {
             font-size: 3.8rem;
-            top:0;
             left:25%
         }
   }
@@ -667,9 +666,17 @@ li {
 @media (min-width: 800px){
 
 .first__overlay {
-            font-size: 5.8rem;
+            font-size: 5.2rem;
+            margin-top: 1em;
             top: 5%;
             left:25%
+        }
+  }
+
+@media (min-width: 1200px){
+
+.first__overlay {
+            font-size: 7.2rem
         }
   }
 
@@ -688,7 +695,7 @@ li {
       }
 
 .first--click {
-        padding: 2%;
+        padding: 3%;
         list-style: none;
         bottom: 0;
         width: 50%;
@@ -706,7 +713,7 @@ li {
 
 .first--click-red{
           bottom: 0;
-          right: 10%
+          right: 1%
       }
   }
 
@@ -714,7 +721,7 @@ li {
 
 .first--click-red{
           bottom: 0;
-          right: 0
+          right: 1%
       }
   }
 
@@ -736,7 +743,14 @@ li {
 @media (min-width: 530px){
 
 .first--logo {
-          height: 70px
+          height: 80px
+      }
+  }
+
+@media (min-width: 1200px){
+
+.first--logo {
+          height: 90px
       }
   }
 
@@ -767,7 +781,7 @@ li {
 
 .first--click-blue {
           bottom: 0;
-          left:-10%
+          left:1%
     }
   }
 
@@ -775,7 +789,7 @@ li {
 
 .first--click-blue {
           bottom: 0;
-          left: 0
+          left: 1%
     }
   }
 
@@ -789,7 +803,7 @@ li {
 
 .first--figcaption-red {
 
-      font-size: .6rem;
+      font-size: .5rem;
       line-height: 9px;
       font-weight: 300;
       top:20%;
@@ -801,13 +815,13 @@ li {
         font-size: .9rem;
         line-height: 12px;
         font-weight: 400;
-        top: 30%
+        top: 35%
     }
   }
 
 .first--figcaption-blue {
 
-      font-size: .7rem;
+      font-size: .6rem;
       line-height: 9px;
       font-weight: 300;
       top: 30%;

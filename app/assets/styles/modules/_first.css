@@ -28,20 +28,24 @@
         /*the z-index makes the text stack above the video layer*/
         z-index: 1;
 
-        font-size: 2.2rem;
+        font-size: 1.6rem;
 
           @mixin atSmall {
             font-size: 3.8rem;
-            top:0;
             left:25%;
           }
 
           @mixin atMedium {
-            font-size: 5.8rem;
+            font-size: 5.2rem;
+            margin-top: 1em;
             top: 5%;
             left:25%;
           }
+          @mixin atLarge {
+            font-size: 7.2rem;
+          }
         }
+
 
       &__overlay a:link,
       &__overlay a:visited{
@@ -57,7 +61,7 @@
         opacity: 0.9;
       }
       &--click {
-        padding: 2%;
+        padding: 3%;
         list-style: none;
         bottom: 0;
         width: 50%;
@@ -72,11 +76,11 @@
 
         @mixin atSmall {
           bottom: 0;
-          right: 10%;
+          right: 1%;
         }
         @mixin atMedium {
           bottom: 0;
-          right: 0;
+          right: 1%;
         }
         @mixin atLarge {
           bottom: 0;
@@ -89,7 +93,10 @@
         height: 40px;
         width: auto;
         @mixin atSmall {
-          height: 70px;
+          height: 80px;
+        }
+        @mixin atLarge {
+          height: 90px;
         }
       }
 
@@ -115,13 +122,13 @@
 
         @mixin atSmall {
           bottom: 0;
-          left:-10%;
+          left:1%;
 
 
         }
         @mixin atMedium {
           bottom: 0;
-          left: 0;
+          left: 1%;
         }
         @mixin atLarge {
           bottom: 0;
@@ -131,7 +138,7 @@
 
     &--figcaption-red {
 
-      font-size: .6rem;
+      font-size: .5rem;
       line-height: 9px;
       font-weight: 300;
       top:20%;
@@ -139,13 +146,13 @@
         font-size: .9rem;
         line-height: 12px;
         font-weight: 400;
-        top: 30%;
+        top: 35%;
       }
     }
 
     &--figcaption-blue {
 
-      font-size: .7rem;
+      font-size: .6rem;
       line-height: 9px;
       font-weight: 300;
       top: 30%;
