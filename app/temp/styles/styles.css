@@ -630,6 +630,8 @@ li {
 
 .first__background-video {
         width: 100%;
+        position: relative;
+        z-index: -1;
 
       }
 
@@ -757,10 +759,15 @@ li {
 .first--figure {
         position: relative;
         display: inline-block;
-
         margin: 0 auto;
+      }
 
-        }
+.first--figure-link{
+        display:inline-block;
+        z-index: 1;
+
+
+      }
 
 .first--figcaption {
         position: absolute;

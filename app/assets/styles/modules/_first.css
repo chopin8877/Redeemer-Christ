@@ -6,6 +6,8 @@
 
       &__background-video {
         width: 100%;
+        position: relative;
+        z-index: -1;
 
       }
 
@@ -103,10 +105,15 @@
       &--figure {
         position: relative;
         display: inline-block;
-
         margin: 0 auto;
+      }
 
-        }
+      &--figure-link{
+        display:inline-block;
+        z-index: 1;
+
+
+      }
       &--figcaption {
         position: absolute;
         width: 100%;
@@ -123,8 +130,6 @@
         @mixin atSmall {
           bottom: 0;
           left:1%;
-
-
         }
         @mixin atMedium {
           bottom: 0;
